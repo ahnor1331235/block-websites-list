@@ -1,0 +1,42 @@
+# ==============================================================================
+# Pi-hole Essential Allowlist (Walled-Garden / Block-All Companion List)
+# ==============================================================================
+# Instructions:
+# 1. Ensure you have added `^.*$` to your Pi-hole Regex Blacklist.
+# 2. Import or paste these domains into your Pi-hole Allowlist (Whitelist).
+# Note: Subdomains prefixed with `*.` should be added as Regex/Wildcard
+#       whitelists in the Pi-hole Admin UI.
+# ==============================================================================
+
+# --- Windows / Microsoft Core Services ---
+microsoft.com
+windowsupdate.com
+msftncsi.com
+*.msftncsi.com
+settings-win.data.microsoft.com
+dl.delivery.mp.microsoft.com
+
+# --- Apple / iOS / macOS Core Services ---
+apple.com
+icloud.com
+mzstatic.com
+ocos-profile.apple.com
+captive.apple.com
+
+# --- Android / Google Core Services ---
+google.com
+googleapis.com
+gstatic.com
+android.com
+clients3.google.com
+
+# --- Essential Web Infrastructure & CDNs ---
+cloudflare.com
+jsdelivr.net
+cdnjs.cloudflare.com
+
+# --- Common Daily Utility Websites ---
+wikipedia.org
+*.wikipedia.org
+github.com
+*.github.com
